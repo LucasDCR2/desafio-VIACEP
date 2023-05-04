@@ -27,7 +27,7 @@
       <div class="input">
         <form action="." method="post" id="form">
           <label for="cep"></label>
-          <input class="digitarCep" type="text" id="cep" name="cep" size="8" maxlength="8" placeholder="DIGITE O CEP" value="<?php echo $address->cep ?? '' ?>" oninput="this.value = this.value.replace(/[^0-9]/g, '');" >
+          <input class="digitarCep" type="text" id="cep" name="cep" size="8" maxlength="8" placeholder="DIGITE O CEP" value="<?php echo $address->cep ?? '' ?>" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
           <button class="submit" type="submit" name="btn-buscar"><img class="iconeLupa" src="Lupa.png"></button>
           <?php
           if (isset($_POST['btn-buscar'])) {
